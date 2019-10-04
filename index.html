@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+	<head>
+
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+
+		<!-- title -->
+        <title>Flexbox</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="/css/header.css" />
+		<link rel="stylesheet" href="/css/nav.css" />
+
+		<!-- JS -->
+		<script src="flexbox.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="zurück"><a href="javascript:history.back()" class="zurück">&lt</a></div>
+			<span>
+				<h1>Flexbox</h1>
+			</span>
+		</header>
+
+		<nav>
+			<fieldset id="display">
+				<legend>Display</legend>
+
+				<input type="radio" id="flex" name="display" value="flex"> 
+				<label for="flex">flex</label> 
+
+				<input type="radio" id="block" name="display" value="block"> 
+				<label for="block">block</label> 
+
+				<input type="radio" id="inline-block" name="display" value="inline-block"> 
+				<label for="inline-block">inline-block</label> 
+			</fieldset>
+
+			<fieldset>
+				<legend>Bilder verkleinern</legend>
+					<input type="checkbox" id="chbFbCell" />
+					<label for="chbFbCell">Flexbox Cell</label>
+			</fieldset>
+
+			<fieldset id="flex-direction">
+				<legend>Flex-Direction</legend>
+
+				<input type="radio" id="row" name="flex-direction" value="row"> 
+				<label for="flex">row</label> 
+
+				<input type="radio" id="column" name="flex-direction" value="column"> 
+				<label for="block">column</label> 
+			</fieldset>
+
+			<fieldset id="flex-wrap">
+				<legend>Flex-Wrap</legend>
+
+				<input type="radio" id="nowrap" name="flex-wrap" value="nowrap"> 
+				<label for="nowrap">nowrap</label> 
+
+				<input type="radio" id="wrap" name="flex-wrap" value="wrap"> 
+				<label for="wrap">wrap</label> 
+
+				<input type="radio" id="wrap-reverse" name="flex-wrap" value="wrap-reverse"> 
+				<label for="wrap-reverse">wrap-reverse</label> 
+			</fieldset>
+
+			<fieldset>
+				<legend>Ränder</legend>
+				<input type="checkbox" id="chbPadMargin" />
+				<label for="chbPadMargin">Padding / Margin</label>
+			</fieldset>
+		</nav>
+
+		<main>
+			<div class="fi" id="flexitem1"><p class="big">display:<span>flex</span></p>Nullam interdum malesuada dolor,<br>et pellentesque lorem</div>
+			<div class="fi" id="flexitem2">Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+			<div class="fi" id="flexitem3">Nullam sollicitudin,<br>neque sit amet<br>cursus pulvinar</div>
+			<div class="fi" id="flexitem4">Fusce at aliquet lorem.
+				<img id="img"  src="klimafakten-rhein-bruecke.jpeg" alt="Brücke am Rhein">
+			</div>
+			<div class="fi" id="flexitem5">Ut consequat ipsum eu turpis elementum vehicula. Ut auctor risus non elit hendrerit accumsan</div>
+		</main>
+		
+		<div id="wrapper">
+			wrapper
+			<div id="container">
+				container
+				<div id="div1">
+					div1
+				</div>
+				<div id="div1">
+					div2
+				</div>
+				<div id="div1">
+					div3
+				</div>
+			</div>
+		</div>
+
+		<fieldset>
+			<legend>Display</legend>
+			<fieldset>
+				<legend>Wrapper</legend>
+				<input type="checkbox" id="chbDisplayWrapper" />
+				<label for="chbPadMargin">flex (default=block)</label>
+			</fieldset>
+			<fieldset>
+				<legend>Container</legend>
+				<input type="checkbox" id="chbDisplayContainer" />
+				<label for="chbPadMargin">flex (default=block)</label>
+
+			</fieldset>
+		</fieldset>
+	</body>
+
+</html>
