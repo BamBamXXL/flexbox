@@ -36,35 +36,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	subDisableFieldsets(true);
 
+	var aOutput = new Array();
+
 	// Display
 	var objDisplayWrapper = document.getElementById("chbDisplayWrapper");
 	objDisplayWrapper.addEventListener("click", clickDisplayWrapper);
 	objDisplayWrapper.checked = false;
-	var objDisplayContainer = document.getElementById("chbDisplayContainer");
-	objDisplayContainer.addEventListener("click", clickDisplayContainer);
-	objDisplayContainer.checked = false;
+	var objDisplayContainer01 = document.getElementById("chbDisplayContainer01");
+	objDisplayContainer01.addEventListener("click", clickDisplayContainer01);
+	objDisplayContainer01.checked = false;
 	
 	var objWrapper = document.getElementById("wrapper");
-	var objContainer = document.getElementById("container");
+	var objContainer01 = document.getElementById("container_01");
+
 	function clickDisplayWrapper(event) {
 		if (event.target.checked == true){
 			objWrapper.style.display = "flex";
 			objWrapper.childNodes[0].nodeValue = "wrapper -> display:flex";
+			aOutput["DisplayWrapper"]=".wrapper {\n\tdisplay: flex;\n}";
 		} else {
 			objWrapper.style.display = "block";
 			objWrapper.childNodes[0].nodeValue = "wrapper -> display:block";
+			aOutput["DisplayWrapper"]="";
 		};
+		funOutput();
+		alert(aOutput["DisplayWrapper"]);
 	}
-	function clickDisplayContainer(event) {
+	function clickDisplayContainer01(event) {
 		if (event.target.checked == true){
-			objContainer.style.display="flex";
-			objContainer.childNodes[0].nodeValue = "container -> display:flex";
+			objContainer01.style.display="flex";
+			objContainer01.childNodes[0].nodeValue = "container_01 -> display:flex";
+			aOutput["DisplayContainer01"]=".container01 {\n\tdisplay: flex;\n}";
 		} else {
-			objContainer.style.display="block";
-			objContainer.childNodes[0].nodeValue = "container -> display:block";
+			objContainer01.style.display="block";
+			objContainer01.childNodes[0].nodeValue = "container_01 -> display:block";
+			aOutput["DisplayContainer01"]="";
 		};
+		funOutput();
 	}
 
+	function funOutput() {
+		var sStr = "";
+		// for (var i = 0; i < aOutput.length; i++) {
+		for (var s in aOutput) {}
+			// sStr =+ aOutput(i) + "\n";
+			sStr =+ s + "\n";
+		}
+		document.getElementById("output").childNodes[0].nodeValue = sStr;
+	}
 
 	function clickDisplay(event) {
 		tagMain[0].style.display = event.target.value;

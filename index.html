@@ -89,20 +89,23 @@
 		
 		<div id="wrapper">
 			wrapper
-			<div id="container">
-				container
+			<div id="container_01">
+				container_01
 				<div id="div1">
 					div1
 				</div>
-				<div id="div1">
-					div2
-				</div>
-				<div id="div1">
-					div3
+				<div class="container_02">
+					container_02
+					<div id="div1">
+						div2
+					</div>
+					<div id="div1">
+						div3
+					</div>
 				</div>
 			</div>
 		</div>
-
+		
 		<fieldset>
 			<legend>Display</legend>
 			<fieldset>
@@ -112,11 +115,16 @@
 			</fieldset>
 			<fieldset>
 				<legend>Container</legend>
-				<input type="checkbox" id="chbDisplayContainer" />
+				<input type="checkbox" id="chbDisplayContainer01" />
 				<label for="chbPadMargin">flex (default=block)</label>
 
 			</fieldset>
 		</fieldset>
+
+		<div id="output" style="background-color: gainsboro">
+
+		</div>
+	
 	</body>
 
 </html>
