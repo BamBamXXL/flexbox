@@ -10,7 +10,7 @@
         <title>Flexbox</title>
 
 		<!-- CSS -->
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="flexbox.css" />
 		<link rel="stylesheet" href="/css/header.css" />
 		<link rel="stylesheet" href="/css/nav.css" />
 
@@ -86,7 +86,30 @@
 			</div>
 			<div class="fi" id="flexitem5">Ut consequat ipsum eu turpis elementum vehicula. Ut auctor risus non elit hendrerit accumsan</div>
 		</main>
-		
+
+		<fieldset> 
+			<legend>eigene Namen</legend>
+			<label for="txt_wrapper">wrapper</label>
+			<input type="text" id="txt_wrapper" placeholder="#wrapper">
+			<label for="txt_container_01">container_01</label>
+			<input type="text" id="txt_container_01" placeholder="#container_01">
+		</fieldset>
+
+		<fieldset>
+			<legend>Display</legend>
+			<fieldset>
+				<legend>Wrapper</legend>
+				<input type="checkbox" id="chbDisplayWrapper" />
+				<label for="chbDisplayWrapper">flex (default=block)</label>
+			</fieldset>
+			<fieldset>
+				<legend>Container</legend>
+				<input type="checkbox" id="chbDisplayContainer01" />
+				<label for="chbDisplayContainer01">flex (default=block)</label>
+
+			</fieldset>
+		</fieldset>
+
 		<div id="wrapper">
 			wrapper
 			<div id="container_01">
@@ -94,7 +117,7 @@
 				<div id="div1">
 					div1
 				</div>
-				<div class="container_02">
+				<div id="container_02">
 					container_02
 					<div id="div1">
 						div2
@@ -106,24 +129,9 @@
 			</div>
 		</div>
 		
-		<fieldset>
-			<legend>Display</legend>
-			<fieldset>
-				<legend>Wrapper</legend>
-				<input type="checkbox" id="chbDisplayWrapper" />
-				<label for="chbPadMargin">flex (default=block)</label>
-			</fieldset>
-			<fieldset>
-				<legend>Container</legend>
-				<input type="checkbox" id="chbDisplayContainer01" />
-				<label for="chbPadMargin">flex (default=block)</label>
+		<pre id="output" style="background-color: gainsboro">
 
-			</fieldset>
-		</fieldset>
-
-		<div id="output" style="background-color: gainsboro">
-
-		</div>
+		</pre>
 	
 	</body>
 

@@ -59,3 +59,32 @@ main {
 	padding: 8px 4px;
 	line-height: 130%;
 }
+
+/* -------------------------------------------------- */
+
+div#wrapper{
+	border-width: 0.0625em;
+	border-style: solid;
+	border-color: black;
+	margin: 0.125em;
+	padding: 0.125em;
+}
+#wrapper div {
+	border-width: 0.0625em;
+	border-style: solid;
+	border-color: black;
+	margin: 0.125em;
+	padding: 0.125em;
+}
+
+#output {
+	margin: 0.25em;
+	padding: 0.25em;
+	
+	border-width: 0.0625em;
+	border-style: solid;
+	border-color: rgb(95, 48, 48);
+
+	border-radius: 0.625em;
+	box-shadow: 10px 10px 10px gray;
+}
