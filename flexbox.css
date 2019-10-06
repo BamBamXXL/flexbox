@@ -19,62 +19,25 @@ main {
 	max-width: 100%;
 }
 
-.fi {
-	border-width: 2px;
-	border-style: solid;
-}
-
-#flexitem1 {
-	border-color: greenyellow;
-	background-color: rgb(255, 255, 220);
-}
-
-#flexitem2 {
-	border-color: rgb(128, 189, 36);
-	background-color: rgb(255, 245, 190);
-}
-
-#flexitem3 {
-	border-color: greenyellow;
-	border-width: 2px !important;
-	background-color: rgb(255, 235, 140);
-}
-
-#flexitem4 {
-	border-color: rgb(128, 189, 36);
-	background-color: rgb(255, 225, 80);
-}
-
-#flexitem5 {
-	border-color: greenyellow;
-	background-color: rgb(255, 215, 0);
-}
-
-.big {
-	font-size: 16px;
-	background-color: white;
-	border-radius: 4px;
-	margin-top: 2px;
-	color: gray;
-	padding: 8px 4px;
-	line-height: 130%;
-}
-
 /* -------------------------------------------------- */
-
-div#wrapper{
+.label {
+	background-color: rgb(48, 148, 121);
+	color: #fff;
+	top: 0;
+	left: 0;
+	padding: .125em;
+}
+#wrapper{
 	border-width: 0.0625em;
 	border-style: solid;
-	border-color: black;
+	border-color: rgb(48, 148, 121);
 	margin: 0.125em;
-	padding: 0.125em;
 }
 #wrapper div {
 	border-width: 0.0625em;
 	border-style: solid;
-	border-color: black;
-	margin: 0.125em;
-	padding: 0.125em;
+	border-color: rgb(48, 148, 121);
+	margin: 0.5em;
 }
 
 #output {
