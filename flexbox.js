@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			aOutput[n.container_01]= nsu[n.container_01] + " {\n\tdisplay: flex;\n}";
 		} else {
 			objContainer01.style.display="block";
-			objContainer01.getElementsByClassName("label")[0].innerHTML = ns[n.container_01] + " ;
+			objContainer01.getElementsByClassName("label")[0].innerHTML = ns[n.container_01];
 			aOutput[n.container_01]="";
 		};
 		funOutput();
